@@ -121,28 +121,43 @@ header nav a:hover { color: hsl(var(--primary)); }
   margin: 0 auto;
   padding: var(--space-6) 1rem;
 }
+
+/* Post Header Alignment Fix */
 .post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: var(--space-5);
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 800;
+  background: var(--grad-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.75rem;
 }
 
 .post-meta {
+  margin-top: 0.25rem;
   text-align: center;
-  margin-top: 0.75rem;
 }
 
-.post-date,
+.post-date {
+  color: hsl(var(--muted-fg));
+  font-size: 0.95rem;
+  margin: 0;
+}
+
 .post-author {
   color: hsl(var(--muted-fg));
-  margin: 0;
   font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.post-author {
-  margin-top: 0.2rem;
+  margin: 0.2rem 0 0;
   font-style: italic;
 }
+
 
 .post-title {
   font-size: clamp(2rem, 2vw + 1rem, 3rem);
