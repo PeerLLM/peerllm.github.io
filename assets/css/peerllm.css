@@ -125,6 +125,25 @@ header nav a:hover { color: hsl(var(--primary)); }
   text-align: center;
   margin-bottom: var(--space-5);
 }
+
+.post-meta {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.post-date,
+.post-author {
+  color: hsl(var(--muted-fg));
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.post-author {
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
 .post-title {
   font-size: clamp(2rem, 2vw + 1rem, 3rem);
   font-weight: 800;
