@@ -2,7 +2,7 @@
 
 Official blog for PeerLLM - sharing insights, updates, and discussions about peer-to-peer large language models and distributed AI systems.
 
-🌐 **Live Site**: [https://peerllm.github.io](https://peerllm.github.io)
+🌐 **Live Site**: [https://blog.peerllm.com](https://blog.peerllm.com)
 
 ## About
 
