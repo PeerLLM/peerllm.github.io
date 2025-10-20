@@ -1,81 +1,98 @@
 /* ────────────────────────────────
-   PeerLLM Design System (v1)
+   PeerLLM Theme v2 — Full Glow Edition
+   Author: Hassan Habib
    ──────────────────────────────── */
 
 :root {
-  /* Colors */
+  /* Core Colors */
   --peerllm-blue: #0c85ff;
   --peerllm-purple: #a855f7;
   --peerllm-dark: #0a0a0a;
+  --peerllm-gray: #a0a0a0;
   --peerllm-light: #f5f7fa;
-  --peerllm-gray: #999;
   --peerllm-gradient: linear-gradient(90deg, var(--peerllm-blue), var(--peerllm-purple));
 
   /* Typography */
-  --peerllm-font: "Inter", "Segoe UI", Roboto, sans-serif;
-  --peerllm-font-mono: "Fira Code", monospace;
+  --font-main: "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", monospace;
 
   /* Layout */
-  --max-width: 900px;
   --radius: 1rem;
+  --max-width: 960px;
 }
 
-/* Base */
+/* Animated Gradient */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Global Base */
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--peerllm-dark);
-  color: var(--peerllm-light);
-  font-family: var(--peerllm-font);
-  line-height: 1.6;
+  background: radial-gradient(circle at 50% -20%, rgba(12,133,255,0.2), transparent 60%) var(--peerllm-dark);
+  background-attachment: fixed;
+  color: rgba(255,255,255,0.9);
+  font-family: var(--font-main);
+  line-height: 1.8;
+  scroll-behavior: smooth;
 }
 
-a {
-  color: var(--peerllm-blue);
-  text-decoration: none;
-  transition: color 0.25s ease;
-}
-a:hover {
-  color: var(--peerllm-purple);
+/* Glow Layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 10%, rgba(168,85,247,0.08), transparent 70%);
+  z-index: -1;
 }
 
 /* Header */
 header {
-  background: var(--peerllm-gradient);
+  background: linear-gradient(270deg, var(--peerllm-blue), var(--peerllm-purple));
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease infinite;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 40px rgba(12,133,255,0.15);
 }
 header img {
-  height: 2.5rem;
+  height: 2.8rem;
 }
 header nav a {
   color: white;
   margin-left: 1.5rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s ease;
 }
 header nav a:hover {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   text-align: center;
-  padding: 5rem 1rem 3rem;
-  background: radial-gradient(circle at top, rgba(12,133,255,0.15) 0%, transparent 70%);
+  padding: 6rem 1rem 4rem;
+  background: radial-gradient(circle at 50% -40%, rgba(12,133,255,0.25), transparent 70%);
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
   background: var(--peerllm-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 .hero p {
   color: var(--peerllm-gray);
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 /* Blog List */
@@ -85,15 +102,16 @@ header nav a:hover {
   padding: 2rem;
 }
 .post-item {
-  background: #111;
+  background: linear-gradient(145deg, #0f0f0f, #161616);
   border-radius: var(--radius);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 15px rgba(12,133,255,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .post-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.5), 0 0 25px rgba(168,85,247,0.3);
 }
 .post-title {
   font-size: 1.8rem;
@@ -101,6 +119,7 @@ header nav a:hover {
   background: var(--peerllm-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
 }
 .post-meta {
   color: var(--peerllm-gray);
@@ -108,60 +127,54 @@ header nav a:hover {
   margin-bottom: 1rem;
 }
 .post-excerpt {
-  color: #ccc;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+}
+.post-excerpt a {
+  color: var(--peerllm-blue);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dashed transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.post-excerpt a:hover {
+  color: var(--peerllm-purple);
+  border-color: var(--peerllm-purple);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  color: var(--peerllm-gray);
-  border-top: 1px solid #222;
-}
-
-/* ────────────────────────────────
-   Post Page Styles
-   ──────────────────────────────── */
-
+/* Single Post */
 .post {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1rem 5rem;
 }
-
 .post-header {
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .post-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
   background: var(--peerllm-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
 }
-
 .post-date {
   color: var(--peerllm-gray);
   font-size: 0.95rem;
 }
-
 .post-content {
   font-size: 1.1rem;
-  color: var(--peerllm-light);
-  line-height: 1.8;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.9;
 }
-
 .post-content h2, .post-content h3 {
   margin-top: 2.5rem;
   background: var(--peerllm-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .post-content a {
   color: var(--peerllm-blue);
   border-bottom: 1px solid var(--peerllm-blue);
@@ -171,29 +184,19 @@ footer {
   color: var(--peerllm-purple);
   border-color: var(--peerllm-purple);
 }
-
-.post-content code {
-  background: #1a1a1a;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-family: var(--peerllm-font-mono);
-  color: #fff;
-}
-
 .post-content pre {
   background: #111;
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
-  font-family: var(--peerllm-font-mono);
+  font-family: var(--font-mono);
   color: #eaeaea;
+  box-shadow: 0 0 15px rgba(12,133,255,0.15);
 }
-
 .post-footer {
   text-align: center;
   margin-top: 3rem;
 }
-
 .back-link {
   color: var(--peerllm-blue);
   font-weight: 500;
@@ -204,13 +207,31 @@ footer {
   border-color: var(--peerllm-purple);
 }
 
-/* ────────────────────────────────
-   Excerpts (used on homepage)
-   ──────────────────────────────── */
-
-.post-excerpt {
-  color: #ccc;
-  line-height: 1.7;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: var(--peerllm-gray);
+  border-top: 1px solid #222;
+  background: #080808;
+  margin-top: 4rem;
 }
 
-
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  header nav {
+    margin-top: 0.75rem;
+  }
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .post-item {
+    padding: 1.5rem;
+  }
+}
