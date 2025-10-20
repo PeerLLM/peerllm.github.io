@@ -1,0 +1,121 @@
+/* ────────────────────────────────
+   PeerLLM Design System (v1)
+   ──────────────────────────────── */
+
+:root {
+  /* Colors */
+  --peerllm-blue: #0c85ff;
+  --peerllm-purple: #a855f7;
+  --peerllm-dark: #0a0a0a;
+  --peerllm-light: #f5f7fa;
+  --peerllm-gray: #999;
+  --peerllm-gradient: linear-gradient(90deg, var(--peerllm-blue), var(--peerllm-purple));
+
+  /* Typography */
+  --peerllm-font: "Inter", "Segoe UI", Roboto, sans-serif;
+  --peerllm-font-mono: "Fira Code", monospace;
+
+  /* Layout */
+  --max-width: 900px;
+  --radius: 1rem;
+}
+
+/* Base */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--peerllm-dark);
+  color: var(--peerllm-light);
+  font-family: var(--peerllm-font);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--peerllm-blue);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+a:hover {
+  color: var(--peerllm-purple);
+}
+
+/* Header */
+header {
+  background: var(--peerllm-gradient);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 2.5rem;
+}
+header nav a {
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
+header nav a:hover {
+  opacity: 0.85;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+  background: radial-gradient(circle at top, rgba(12,133,255,0.15) 0%, transparent 70%);
+}
+.hero h1 {
+  font-size: 3rem;
+  background: var(--peerllm-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.hero p {
+  color: var(--peerllm-gray);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Blog List */
+.blog-list {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+.post-item {
+  background: #111;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.post-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: var(--peerllm-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.post-meta {
+  color: var(--peerllm-gray);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.post-excerpt {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: var(--peerllm-gray);
+  border-top: 1px solid #222;
+}
