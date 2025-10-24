@@ -30,7 +30,7 @@ Becoming a PeerLLM Host is simple and open to everyone, whether you have a gamin
 
 Follow these steps to join:
 
-1. **Visit [peerllm.com/host](https://peerllm.com/host)**  
+1. **Visit [peerllm.com/join-as-host](https://www.peerllm.com/join-as-host.html)**  
    You’ll find details about how the network works and what it means to become a Host.
 
 2. **Apply to become a Host**  
