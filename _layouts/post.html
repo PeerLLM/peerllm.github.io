@@ -22,3 +22,13 @@ layout: default
     <a class="back-link" href="{{ '/' | relative_url }}">← Back to Blog</a>
   </footer>
 </article>
+
+<script>
+document.addEventListener('scroll', () => {
+  const header = document.querySelector('.post-header');
+  if (!header) return;
+  const shrinkPoint = 120;
+  if (window.scrollY > shrinkPoint) header.classList.add('shrink');
+  else header.classList.remove('shrink');
+});
+</script>
