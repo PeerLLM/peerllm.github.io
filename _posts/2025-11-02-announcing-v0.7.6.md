@@ -25,6 +25,16 @@ The new architecture:
 - Improves cross-platform consistency across Windows, macOS, and Linux  
 - Enables cleaner background processes for multi-model support and GPU acceleration  
 
+<p align="center">
+  <img src="/assets/images/Hassan with all OSs.jpg" alt="PeerLLM menu on Windows and Linux" width="100%"/>
+</p>
+
+<p align="center"><em>
+When I started PeerLLM, I dreamed of a network that could unite devices of every kind under one vision: decentralized intelligence for everyone.  
+Seeing the Host run seamlessly across Windows, macOS, and Linux for the first time felt like that dream taking shape.  
+This photo means more than compatibility — it’s proof that a connected, ethical, human-centered AI ecosystem is possible.  
+</em></p>
+
 This rewrite sets the stage for faster response times and modular orchestration.
 
 ---
@@ -34,34 +44,100 @@ This rewrite sets the stage for faster response times and modular orchestration.
 High-end Hosts are now breaking speed records.  
 With optimized GPU utilization, threading, and token streaming, some Hosts have gone from 1 token per 190 milliseconds to 1 token per 9 milliseconds, the fastest ever recorded in the PeerLLM network.
 
+<p align="center">
+  <img src="/assets/images/FasteBetter.png" alt="PeerLLM menu on macOS" width="60%"/>
+</p>
+
 If your hardware supports it, expect a major jump in throughput and responsiveness.
 
 ---
 
 ## 🧭 2/ Menus: Explore, Configure, Test, and Connect
 
-PeerLLM Host now includes intuitive menus to help you:
-
-- Open your **LLMs folder** instantly  
-- Access your **configuration files**  
-- Run a **Host Test** to verify performance  
-- View the **About** section and connect with the community  
-
-This is the menu on Windows and Linux:
-
-<p align="center">
-  <img src="../assets/images/menu-in-v0.7.6.png" alt="PeerLLM T-Shirt front" width="50%"/>
-</p>
-
-People who use MacOS will find the menu at the very top left of their screen:
-
-<p align="center">
-  <img src="../assets/images/menu-in-v0.7.6-macos.png" alt="PeerLLM T-Shirt front" width="50%"/>
-</p>
-
-The Host app now feels more complete, functional, and user-friendly.
+PeerLLM Host v0.7.6 introduces a full desktop-style menu system, making it easier to navigate and manage your Host.  
+Menus now exist on **Windows**, **Linux**, and **macOS**, each following the conventions of their platform.
 
 ---
+
+### 🪟 2.1 Menu Availability
+
+**Windows and Linux**  
+The main menu appears at the top of the Host window.
+
+<p align="center">
+  <img src="/assets/images/menu-in-v0.7.6.png" alt="PeerLLM menu on Windows and Linux" width="50%"/>
+</p>
+
+**macOS**  
+The menu appears in the native system bar at the top left of the screen.
+
+<p align="center">
+  <img src="/assets/images/menu-in-v0.7.6-macos.png" alt="PeerLLM menu on macOS" width="50%"/>
+</p>
+
+---
+
+### 📂 2.2 Open LLMs Folder
+
+This option opens the folder containing your downloaded models.  
+Use it to quickly check your model files, verify installation size, or manage multiple `.gguf` models.
+
+Default model directory:
+- **Windows:** `C:\Users\<username>\AppData\Roaming\peerllm-host-electron\LLMs\` 
+- **macOS:** `~/Users/<username>/Library/Application Support/peerllm-host-electron/LLMs/`  
+- **Linux:** `~/home/<username>/.config/peerllm-host-electron/LLMs/`
+
+---
+
+### ⚙️ 2.3 Open Configuration Folder
+
+This option opens your configuration directory, where your `peerllm-host-config.json` file is stored.  
+You can review or back up your host details, version history, or settings from here.
+
+Typical configuration path:
+- **Windows:** `C:\Users\<username>\AppData\Roaming\peerllm-host-electron\LLMs`  
+- **macOS:** `~/Users/<username>/Library/Application Support/peerllm-host-electron/`  
+- **Linux:** `~/home/<username>/.config/peerllm-host-electron/`
+
+---
+
+### 🧪 2.4 Test Host
+
+Use this option to run a full diagnostic test of your Host setup.  
+It verifies:
+- Model load speed  
+- Token generation throughput  
+- Memory and GPU usage  
+- Latency per token  
+
+<p align="center">
+  <img src="/assets/images/testing-llms-v0.7.6.gif" alt="PeerLLM menu on macOS" width="90%"/>
+</p>
+
+The test window displays your performance metrics in real time, confirming your Host is ready to serve compute.
+
+---
+
+### 💬 2.5 About PeerLLM
+
+This section keeps you connected with the PeerLLM community.  
+It includes:
+- Current app version  
+- Links to the PeerLLM website, community pages, and GitHub repo  
+- Contact information for feedback and updates  
+
+The **About** dialog is your quick link to stay informed, supported, and involved.
+
+---
+
+### ✅ 2.6 Why This Matters
+
+This new menu system is more than a design feature.  
+It creates a sense of completeness and professionalism, giving Hosts a consistent experience across platforms.  
+PeerLLM now feels like a native application — simple, organized, and connected.
+
+---
+
 
 ## 🪵 3/ Logs: Smarter Diagnostics
 
@@ -225,9 +301,37 @@ Together, we are building something extraordinary.
 If you want a **PeerLLM shirt** (and yes, they look awesome), reach out in <a href="https://discord.gg/vdPZ7hS52X"> The Standard Community. </a>
 
 <p align="center">
-  <img src="../assets/images/peerllm-shirts.png" alt="PeerLLM T-Shirt front" width="45%"/>
+  <img src="/assets/images/peerllm-shirts.png" alt="PeerLLM T-Shirt front" width="70%"/>
 </p>
 
 We would love to send you one for free as a thank-you for being part of this journey. ❤️
 
 ---
+
+## 🧠 Ready to Become a Host?
+
+Join the decentralized AI revolution today.  
+Sign up as a Host and start serving real compute from your machine.
+<a href="https://www.peerllm.com/join-as-host.html"> Click here to start a join submission form</a>
+
+### Download PeerLLM Host v0.7.6
+
+- 🪟 **Windows (x64):** [Download `PeerLLM-Host-Setup-x64.exe`](https://peerllm.blob.core.windows.net/downloads/PeerLLM.Hosts.Apps-win-x64-v0.7.6.exe)  
+- 🍎 **macOS (Apple Silicon / arm64):** [Download `PeerLLM-Host-arm64.dmg`](https://peerllm.blob.core.windows.net/downloads/PeerLLM.Hosts.Apps-macos-arm64-v0.7.6.dmg)  
+- 🍏 **macOS (Intel / x64):** [Download `PeerLLM-Host-x64.dmg`](https://peerllm.blob.core.windows.net/downloads/PeerLLM.Hosts.Apps-macos-x64-v0.7.6.dmg)  
+- 🐧 **Linux (x64 / AppImage):** [Download `PeerLLM-Host-x64.AppImage`](https://peerllm.blob.core.windows.net/downloads/PeerLLM.Hosts.Apps-linux-amd64-v0.7.6.deb)  
+
+After installation:
+1. Launch PeerLLM Host.  
+2. Enter your **Machine ID** (provided when you sign up as a Host).  
+3. Connect to the Orchestrator network and start contributing compute power.
+
+<p align="center">
+  <a href="https://peerllm.com/host" target="_blank">
+    <img src="/assets/images/peerllm-logo.png" alt="PeerLLM icon" width="60px"/>
+  </a>
+</p>
+
+<p align="center"><em>
+Download PeerLLM Host v0.7.6, connect your machine, and become part of the decentralized, ethical AI future.
+</em></p>
