@@ -213,6 +213,10 @@ Together, we are building something extraordinary.
 ## 👕 Want a PeerLLM Shirt?
 
 If you want a **PeerLLM shirt** (and yes, they look awesome), reach out.  
+
+![PeerLLM T-Shirt front](/assets/images/peerllm-shirt-front.png)
+![PeerLLM T-Shirt back](/assets/images/peerllm-shirt-back.png)
+
 We would love to send you one for free as a thank-you for being part of this journey. ❤️
 
 ---
