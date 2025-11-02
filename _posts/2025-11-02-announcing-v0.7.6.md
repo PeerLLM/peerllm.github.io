@@ -47,7 +47,17 @@ PeerLLM Host now includes intuitive menus to help you:
 - Run a **Host Test** to verify performance  
 - View the **About** section and connect with the community  
 
-![Menus for v0.7.6](/assets/images/menu-in-v0.7.6.png)
+This is the menu on Windows and Linux:
+
+<p align="center">
+  <img src="../assets/images/menu-in-v0.7.6.png" alt="PeerLLM T-Shirt front" width="50%"/>
+</p>
+
+People who use MacOS will find the menu at the very top left of their screen:
+
+<p align="center">
+  <img src="../assets/images/menu-in-v0.7.6-macos.png" alt="PeerLLM T-Shirt front" width="50%"/>
+</p>
 
 The Host app now feels more complete, functional, and user-friendly.
 
@@ -212,10 +222,11 @@ Together, we are building something extraordinary.
 
 ## 👕 Want a PeerLLM Shirt?
 
-If you want a **PeerLLM shirt** (and yes, they look awesome), reach out.  
+If you want a **PeerLLM shirt** (and yes, they look awesome), reach out in <a href="https://discord.gg/vdPZ7hS52X"> The Standard Community. </a>
 
-![PeerLLM T-Shirt front](/assets/images/peerllm-shirt-front.png)
-![PeerLLM T-Shirt back](/assets/images/peerllm-shirt-back.png)
+<p align="center">
+  <img src="../assets/images/peerllm-shirts.png" alt="PeerLLM T-Shirt front" width="45%"/>
+</p>
 
 We would love to send you one for free as a thank-you for being part of this journey. ❤️
 
