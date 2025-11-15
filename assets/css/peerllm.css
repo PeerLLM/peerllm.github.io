@@ -292,6 +292,14 @@ Comments Section Styles
     font-size: 1rem !important;
     color: #eaeaea !important;
 }
+.comments-section {
+    width: 100%;
+    max-width: 100%; 
+}
+
+.post-content .comments-section {
+    max-width: 100%;
+}
 
 /* Footer */
 footer {
