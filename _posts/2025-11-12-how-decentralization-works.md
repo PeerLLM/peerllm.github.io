@@ -86,11 +86,11 @@ This entire cycle happens in milliseconds — enabling **secure, private, and de
 
 ## 4. Why It Matters
 
-PeerLLM isn’t just about running LLMs everywhere — it’s about doing so **responsibly**.  
+PeerLLM isn't just about running LLMs everywhere — it's about doing so **responsibly**.
 By combining **Safety, Anonymity, and Distribution**, the network enforces a **triple-layer trust model**:
 
 | Layer | Purpose | Protection |
-|--------|----------|------------|
+| ------ | -------- | ---------- |
 | Safety | Prevents harm | Legal + Ethical |
 | Anonymity | Removes identifiers | Privacy |
 | Distribution | Balances workload | Reliability |
