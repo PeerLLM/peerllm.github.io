@@ -211,6 +211,96 @@ header nav a:hover { color: hsl(var(--primary)); }
   border-color: hsl(var(--secondary));
 }
 
+/*---------------------------------------
+Comments Section Styles
+-----------------------------------------*/
+/* Smooth spacing container for comments */
+.comments-section {
+    margin-top: 4rem;
+    padding: 2rem 2rem 3rem;
+    background: #0f1624; /* PeerLLM dark navy */
+    border-radius: 14px;
+    border: 1px solid #1b2332;
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.2),
+        0 0 2px rgba(255,149,0,0.05);
+}
+
+/* Allow custom variable overrides of the Utterances iframe */
+.utterances {
+    --color-text-primary: #eaeaea;
+    --color-bg-primary: #0f1624;
+    --color-border-default: #2a3242;
+    --color-bg-alt: #151c29;
+    --color-accent: #ff9500; /* PeerLLM orange */
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Override iframe internals */
+.utterances-frame {
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* Attempt to target internal content when iframe loads */
+.utterances-frame iframe {
+    color: #eaeaea !important;
+}
+
+/* Button styling inside Utterances (git-button) */
+.utterances button,
+.utterances .btn {
+    background: #151c29 !important;
+    color: #eaeaea !important;
+    border: 1px solid #30384b !important;
+    border-radius: 8px !important;
+    padding: 0.45rem 1rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Hover Effects */
+.utterances button:hover,
+.utterances .btn:hover {
+    background: #ff9500 !important;
+    color: #0f0f0f !important;
+    border-color: #ff9500 !important;
+    box-shadow: 0 0 10px rgba(255,149,0,0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Textarea Override */
+.utterances textarea {
+    background: #0f1624 !important;
+    border-radius: 10px !important;
+    border: 1px solid #2d3648 !important;
+    color: #eaeaea !important;
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Textarea focus */
+.utterances textarea:focus {
+    border-color: #ff9500 !important;
+    box-shadow: 0 0 6px rgba(255,149,0,0.5) !important;
+}
+
+/* Comment count "0 comments" */
+.utterances .comment,
+.utterances .utterances-header {
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif !important;
+    font-size: 1rem !important;
+    color: #eaeaea !important;
+}
+.comments-section {
+    width: 100%;
+    max-width: 100%; 
+}
+
+.post-content .comments-section {
+    max-width: 100%;
+}
+
 /* Footer */
 footer {
   background: hsl(var(--card));
