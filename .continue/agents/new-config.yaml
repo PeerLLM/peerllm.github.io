@@ -1,0 +1,15 @@
+# This is an example configuration file
+# To learn more, see the full config.yaml reference: https://docs.continue.dev/reference
+
+name: PeerLLM
+version: 0.8.3
+schema: v1
+
+# Define which models can be used
+# https://docs.continue.dev/customization/models
+models:
+  - name: Mistral 7B v0.1
+    provider: openai
+    model: mistral-7b-instruct-v0.1.Q8_0
+    apiKey: "openai-1234-secret"
+    apiBase: "https://api.peerllm.com/v1"
