@@ -24,7 +24,7 @@ You can:
 - Interact with hosts running the **same or entirely different LLMs**
 
 <p align="center">
-  <img src="/assets/images/remote-chat-capability.png" width="80%">
+  <img src="/assets/images/remote-local-chat.gif" width="80%">
 </p>
 
 This effectively turns every PeerLLM Host into a **universal LLM portal**.
