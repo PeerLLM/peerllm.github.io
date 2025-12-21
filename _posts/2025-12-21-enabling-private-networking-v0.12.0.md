@@ -1,12 +1,12 @@
 ﻿---
 layout: post
-title: "PeerLLM v0.12.0 — Private Network Hosting for a People-Owned AI Future"
+title: "PeerLLM v0.12.1 — Private Network Hosting for a People-Owned AI Future"
 date: 2025-12-21
 categories: [peerllm, release, decentralized-ai]
 tags: [llm, ai, self-hosting, privacy, decentralization]
 ---
 
-Today I’m releasing **PeerLLM v0.12.0**, and this version unlocks something deeply important:
+Today I’m releasing **PeerLLM v0.12.1**, and this version unlocks something deeply important:
 
 **Private network Host access.**
 
@@ -15,7 +15,10 @@ With this release, you can run a PeerLLM Host on one machine and securely connec
 This means you can now integrate PeerLLM with tools like **VS Code**, **IntelliJ**, or any OpenAI-compatible client — all privately, inside your own environment.
 
 ---
-
+<div align="center">
+<iframe width="900px" height="500px" src="https://www.youtube.com/embed/vBivYwKv0mM?si=EjOpWoNbzJyilDgr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+---
 ## Why This Matters (The Bigger Purpose)
 
 I see a future where **intelligence is as fundamental as electricity and water**.
@@ -39,7 +42,7 @@ Private network hosting is the foundation for that future.
 
 ---
 
-## What’s New in v0.12.0
+## What’s New in v0.12.1
 
 ### Private Network Host Access
 You can now expose your PeerLLM Host **only within your local network** and allow other devices to connect securely.
@@ -211,4 +214,5 @@ Sign up to PeerLLM here today:
 <a href="https://www.peerllm.com/join-as-host.html" target="_blank">
 Register here</a>
 
-Enjoy **PeerLLM v0.12.0** 💖  
+Enjoy **PeerLLM v0.12.1** 💖  
+Hassan Habib
