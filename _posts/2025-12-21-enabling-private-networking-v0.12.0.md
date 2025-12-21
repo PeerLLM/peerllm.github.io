@@ -15,8 +15,15 @@ With this release, you can run a PeerLLM Host on one machine and securely connec
 This means you can now integrate PeerLLM with tools like **VS Code**, **IntelliJ**, or any OpenAI-compatible client — all privately, inside your own environment.
 
 ---
-<div align="center">
-<iframe width="900px" height="500px" src="https://www.youtube.com/embed/vBivYwKv0mM?si=EjOpWoNbzJyilDgr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/vBivYwKv0mM?si=EjOpWoNbzJyilDgr"
+    title="YouTube video player"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
 </div>
 ---
 ## Why This Matters (The Bigger Purpose)
