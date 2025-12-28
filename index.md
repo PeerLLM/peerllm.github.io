@@ -9,7 +9,7 @@ title: "PeerLLM Blog"
 </div>
 
 <div class="blog-list">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts %}
   <div class="post-item">
     <div class="post-title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
