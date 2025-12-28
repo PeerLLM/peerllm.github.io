@@ -2,6 +2,7 @@
 layout: post
 title: "PeerLLM v0.12.1 — Private Network Hosting for a People-Owned AI Future"
 date: 2025-12-21
+author: Hassan Habib
 categories: [peerllm, release, decentralized-ai]
 tags: [llm, ai, self-hosting, privacy, decentralization]
 ---

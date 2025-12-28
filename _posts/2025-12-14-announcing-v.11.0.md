@@ -2,6 +2,7 @@
 layout: post
 title: "PeerLLM v0.11.0 — Hosts Are Now Clients"
 date: 2025-12-14
+author: Hassan Habib
 categories: [release, peerllm]
 ---
 
