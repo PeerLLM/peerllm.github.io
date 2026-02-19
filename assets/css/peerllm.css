@@ -190,6 +190,8 @@ header nav a:hover { color: hsl(var(--primary)); }
   color: hsl(var(--muted-fg));
   font-size: 1.05rem;
   line-height: 1.75;
+  max-width: 780px;
+  margin: 0 auto;
 }
 .post-content pre {
   background: hsl(var(--muted));
@@ -399,3 +401,23 @@ img, video {
   .hero h1 { font-size: 1.5rem; }
   .post-item { padding: 1.1rem; }
 }
+
+/* Premium Blog Image Styling */
+.post-content img {
+    display: block;
+    margin: 3rem auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-content img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+  margin: 4rem 0;
+}
+

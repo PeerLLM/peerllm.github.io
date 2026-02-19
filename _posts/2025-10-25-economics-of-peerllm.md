@@ -83,11 +83,9 @@ Below is an interactive calculator that allows you to adjust values and estimate
   color: #fff;
   padding: 3rem;
   border-radius: 1.5rem;
-  margin-top: 3rem;
+  margin: 4rem auto;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
   font-family: 'Inter', 'Roboto', sans-serif;
   text-align: center;
 ">
