@@ -358,3 +358,16 @@ One conversation at a time.
   <img src="/assets/images/seattle-event-feb07.JPG"
        alt="Seattle tech meetup discussion about decentralized AI">
 </div>
+
+---
+
+## A Personal Note
+
+Before closing, I want to acknowledge someone who made this entire tour possible.
+
+My co-founder and partner, Kailu, drove to every single event, helped discover and organize them, captured the photos, and supported every conversation along the way. More importantly, he believes deeply in the mission and long-term vision behind PeerLLM.
+
+Building something ambitious requires more than technical architecture. It requires conviction. It requires someone willing to show up consistently — even when the outcome is uncertain.
+
+I’m grateful to be building this alongside someone who shares that belief.
+
