@@ -12,7 +12,7 @@ Seattle has one of the most vibrant and intellectually demanding tech ecosystems
 
 At these events, we met people from big tech, startups, and even the non-profit sector. Conversations were thoughtful, direct, and deeply technical. As experienced engineers tend to be, the reaction pattern was remarkably consistent. It began with skepticism. Then came curiosity. Then realization. And finally, excitement.
 
-Seattle was the perfect place to stress-test the idea of decentralized AI. If the idea can withstand scrutiny here — among people who understand distributed systems, infrastructure trade-offs, and scale — then it can withstand scrutiny anywhere.
+Seattle was the perfect place to stress-test the idea of decentralized AI. If the idea can withstand scrutiny here  among people who understand distributed systems, infrastructure trade-offs, and scale  then it can withstand scrutiny anywhere.
 
 <div class="post-image">
   <img src="/assets/images/seattle-event-feb02.jpeg"
@@ -31,7 +31,7 @@ The simplest way I describe PeerLLM is this:
 
 That usually earns a smile and an immediate mental model. Once that lands, I refine it in closer conversations:
 
-> “Do you use your computer 100% of the time? Probably not. What if the unused portion of that compute could be shared on a distributed AI network — and potentially generate passive income?”
+> “Do you use your computer 100% of the time? Probably not. What if the unused portion of that compute could be shared on a distributed AI network  and potentially generate passive income?”
 
 At that point, the idea clicks. People immediately visualize idle CPUs and GPUs being transformed into productive infrastructure. And once that visualization forms, the real questions begin.
 
@@ -44,7 +44,7 @@ At that point, the idea clicks. People immediately visualize idle CPUs and GPUs 
 
 ## 2/ Questions
 
-Those who leaned in — especially technical professionals — asked thoughtful and remarkably consistent questions. The skepticism was not dismissive; it was analytical. That made the conversations meaningful.
+Those who leaned in  especially technical professionals  asked thoughtful and remarkably consistent questions. The skepticism was not dismissive; it was analytical. That made the conversations meaningful.
 
 ### 2.0/ Does It Actually Work?
 
@@ -56,7 +56,7 @@ I often describe it using a simple analogy: a farmer, a store owner, and a custo
 
 Developers build models. Those models can be downloaded onto host machines and made available locally, within private networks, or globally through the PeerLLM network.
 
-The generosity of the open-source AI community is what makes this possible. PeerLLM exists because open AI ecosystems exist. Our goal is to help close the economic loop — to allow people contributing compute or models to participate in the value being created.
+The generosity of the open-source AI community is what makes this possible. PeerLLM exists because open AI ecosystems exist. Our goal is to help close the economic loop  to allow people contributing compute or models to participate in the value being created.
 
 That is the foundation of a real AI economy.
 
@@ -64,7 +64,7 @@ That is the foundation of a real AI economy.
 
 ### 2.1/ What About Security?
 
-Security is often the first serious technical concern — and rightly so.
+Security is often the first serious technical concern  and rightly so.
 
 In fast-paced event settings, the architecture diagram communicates the model more effectively than a long explanation.
 
@@ -90,7 +90,7 @@ PeerLLM charges $1 for every 100,000 tokens processed. Of that dollar, $0.95 goe
 
 In practical terms, a host can break even with approximately one 500,000-token session.
 
-Interestingly, the calculator drew the most attention during conversations. It demonstrated preparedness. It showed that this was not just a philosophical idea — but a mathematically considered system.
+Interestingly, the calculator drew the most attention during conversations. It demonstrated preparedness. It showed that this was not just a philosophical idea  but a mathematically considered system.
 
 <div id="peerllm-calculator" style="
   background: linear-gradient(135deg, hsl(213 94% 14%), hsl(25 95% 20%));
@@ -259,7 +259,7 @@ Developers can build on decentralized AI infrastructure without changing their w
 
 One of the most meaningful outcomes of this tour was hearing thoughtful public feedback from engineers who engaged deeply with the idea.
 
-The reflections were not blind optimism. They were analytical and balanced. They highlighted the opportunity — tapping into unused global compute, creating alternative economic participation models, and reducing total reliance on centralized hyperscalers.
+The reflections were not blind optimism. They were analytical and balanced. They highlighted the opportunity tapping into unused global compute, creating alternative economic participation models, and reducing total reliance on centralized hyperscalers.
 
 They also raised hard questions about long-term incentives, latency, performance at scale, and economic sustainability in an AI-dominated world.
 
@@ -290,7 +290,7 @@ And that is precisely why these conversations matter.
 
 Decentralization is not interesting because it sounds idealistic.
 
-It is interesting because serious engineers are beginning to ask whether alternative infrastructure models are not just possible — but necessary.
+It is interesting because serious engineers are beginning to ask whether alternative infrastructure models are not just possible but necessary.
 
 ---
 
@@ -298,7 +298,7 @@ It is interesting because serious engineers are beginning to ask whether alterna
 
 One interesting pattern from these events was realizing that PeerLLM is not alone in exploring decentralized AI infrastructure.
 
-For example, companies like [ReEnvision AI](https://reenvision.ai/) are thinking about decentralized compute from a business perspective — helping organizations rethink how AI workloads can be distributed rather than fully centralized.
+For example, companies like [ReEnvision AI](https://reenvision.ai/) are thinking about decentralized compute from a business perspective helping organizations rethink how AI workloads can be distributed rather than fully centralized.
 
 The approaches may differ. The target audiences may differ. But the underlying signal is the same:
 
@@ -329,7 +329,12 @@ No one dismissed the idea outright.
 
 That matters.
 
-In a future where intelligence becomes infrastructure, infrastructure becomes power. And power — if left concentrated — shapes opportunity, access, and economic participation.
+<div class="post-image">
+  <img src="/assets/images/seattle-event-feb07.JPG"
+       alt="Seattle tech meetup discussion about decentralized AI">
+</div>
+
+In a future where intelligence becomes infrastructure, infrastructure becomes power. And power if left concentrated shapes opportunity, access, and economic participation.
 
 But infrastructure can also be distributed.
 
@@ -354,11 +359,6 @@ One developer.
 One integrator.  
 One conversation at a time.
 
-<div class="post-image">
-  <img src="/assets/images/seattle-event-feb07.JPG"
-       alt="Seattle tech meetup discussion about decentralized AI">
-</div>
-
 ---
 
 ## A Personal Note
@@ -367,7 +367,12 @@ Before closing, I want to acknowledge someone who made this entire tour possible
 
 My co-founder and partner, Kailu, drove to every single event, helped discover and organize them, captured the photos, and supported every conversation along the way. More importantly, he believes deeply in the mission and long-term vision behind PeerLLM.
 
-Building something ambitious requires more than technical architecture. It requires conviction. It requires someone willing to show up consistently — even when the outcome is uncertain.
+Building something ambitious requires more than technical architecture. It requires conviction. It requires someone willing to show up consistently  even when the outcome is uncertain.
 
 I’m grateful to be building this alongside someone who shares that belief.
+
+<div class="post-image">
+  <img src="/assets/images/kailu-and-hassan.png"
+       alt="Seattle tech meetup discussion about decentralized AI">
+</div>
 
