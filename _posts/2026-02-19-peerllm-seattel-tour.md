@@ -92,6 +92,8 @@ In practical terms, a host can break even with approximately one 500,000-token s
 
 Interestingly, the calculator drew the most attention during conversations. It demonstrated preparedness. It showed that this was not just a philosophical idea  but a mathematically considered system.
 
+Important: These numbers reflect scaled network conditions, not current performance.
+
 <div id="peerllm-calculator" style="
   background: linear-gradient(135deg, hsl(213 94% 14%), hsl(25 95% 20%));
   color: #fff;
