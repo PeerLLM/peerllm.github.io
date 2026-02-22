@@ -58,7 +58,7 @@ Developers build models. Those models can be downloaded onto host machines and m
 
 The generosity of the open-source AI community is what makes this possible. PeerLLM exists because open AI ecosystems exist. Our goal is to help close the economic loop  to allow people contributing compute or models to participate in the value being created.
 
-That is the foundation of a real AI economy.
+That is an early step toward a more participatory AI economy.
 
 ---
 
@@ -224,7 +224,7 @@ The goal is not extraction. The goal is distribution.
 
 ### 2.3/ What Stage Are You In?
 
-PeerLLM is already fully functional end-to-end. The network operates, prompts flow, and distributed inference works.
+The core distributed inference system is operational end-to-end. The current focus is production hardening and payment integration ahead of general availability.
 
 The next iteration focuses on payment infrastructure. We are integrating PayPal to manage host subscriptions, host payouts, and consumer billing plans. These components are essential as we prepare for a general availability release of v1.0.0.
 
