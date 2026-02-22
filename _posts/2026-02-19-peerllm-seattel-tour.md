@@ -2,6 +2,7 @@
 layout: post
 title: "Stress-Testing Decentralized AI in Seattle’s Tech Ecosystem"
 date: 2026-02-19
+author: Hassan Habib
 categories: [AI, Decentralization, Community]
 tags: [PeerLLM, Seattle, DistributedAI, Startups]
 ---
