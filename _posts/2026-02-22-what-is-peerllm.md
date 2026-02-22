@@ -40,7 +40,7 @@ PeerLLM combines:
 - **Community-owned compute (hosts)**
 - **Centralized orchestration and safety enforcement**
 - **Redundant routing for reliability**
-- **Cloud fallback for elasticity**
+- **Dedicated Host fallback for elasticity**
 - **Transparent pricing governance**
 - **Federated expansion as the network matures**
 
@@ -49,11 +49,12 @@ PeerLLM combines:
 1. A prompt enters the orchestrator.
 2. It is evaluated for safety.
 3. Identifiers are removed.
-4. It is routed redundantly to multiple hosts.
-5. Responses are evaluated using AI Content Safety.
-6. Only safe responses are returned.
-7. No prompt or response content is retained after delivery.
-8. Only minimal operational telemetry (latency, throughput) is collected.
+4. It gets broken into chunks.
+5. Chunks are routed redundantly to multiple hosts.
+6. Responses are evaluated using AI Content Safety.
+7. Only safe responses are returned.
+8. No prompt or response content is retained after delivery.
+9. Only minimal operational telemetry (latency, throughput) is collected.
 
 This model prioritizes:
 
@@ -131,7 +132,7 @@ PeerLLM uses:
 - Redundant host routing (parallel execution)
 - AI Content Safety screening
 - Host strike system
-- Cloud fallback when needed
+- Dedicated Host fallback when needed
 - Capacity gating to manage utilization
 - Tiered host infrastructure
 
@@ -141,7 +142,7 @@ Customer experience prioritizes:
 - Delivery guarantees
 - Minimal artificial throttling
 
-Fallback to cloud infrastructure is temporary and used to preserve reliability during spikes or host shortages.
+Fallback to dedicated host infrastructure is temporary and used to preserve reliability during spikes or host shortages.
 
 ---
 
