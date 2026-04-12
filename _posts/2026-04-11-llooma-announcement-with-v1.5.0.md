@@ -5,8 +5,6 @@ date: 2026-04-11
 categories: [PeerLLM, Release Notes]
 ---
 
-# PeerLLM v1.5.0 & Introducing LLooMA, The Network-Native Mind
-
 PeerLLM v1.5.0 is a major step forward.
 
 This release is not just about improvements.  
