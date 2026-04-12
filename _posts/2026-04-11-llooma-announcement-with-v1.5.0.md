@@ -27,7 +27,7 @@ LLooMA takes your prompt and:
 - Routes it to one or many hosts based on expertise and complexity
 
 <div class="post-image">
-  <img src="/assets/images/v1.5.0-llooma-demo.gif"
+  <img src="/assets/images/llooma-overview.png"
        alt="New UI experience">
 </div>
 
@@ -47,6 +47,11 @@ LLooMA actively monitors execution across the network.
 - If local inference fails -> LLooMA fills the gap
 
 This creates a system that is not just distributed, but **adaptive in real time**.
+
+<div class="post-image">
+  <img src="/assets/images/v1.5.0-llooma-demo.gif"
+       alt="New UI experience">
+</div>
 
 ---
 
