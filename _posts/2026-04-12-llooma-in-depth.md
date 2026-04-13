@@ -69,6 +69,10 @@ If a host fails to produce an initial response within the allowed time window, t
 
 Failure handling is designed to be seamless. Partial outputs are preserved and extended when possible, allowing the system to recover gracefully without restarting the entire computation. This approach minimizes wasted work and maintains continuity in the generated response.
 
+
+<div class="post-image" style="text-align: center;">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/OJ7dzkl-Sck?si=JIhcEgcUYerfzaKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 ---
 
 ## 4/ Response Normalization and Context Management
