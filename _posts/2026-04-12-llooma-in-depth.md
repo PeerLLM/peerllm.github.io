@@ -5,7 +5,7 @@ date: 2026-04-11
 categories: [PeerLLM, Architecture, LLooMA]
 ---
 
-LLooMA 1.0 is a network-native orchestration system that operates at a layer above traditional large language models. Unlike conventional models, LLooMA does not exist as a set of weights or a runtime artifact. It is not deployed on any host machine, nor is it executed as a standalone inference engine. Instead, LLooMA exists entirely within the PeerLLM orchestrator as a decision-making system responsible for coordinating how intelligence is applied across a decentralized network of independently operated hosts.
+LLooMA 1.0 (Low-Latency Orchestration of Models and Agents) is a network-native orchestration system that operates at a layer above traditional large language models. Unlike conventional models, LLooMA does not exist as a set of weights or a runtime artifact. It is not deployed on any host machine, nor is it executed as a standalone inference engine. Instead, LLooMA exists entirely within the PeerLLM orchestrator as a decision-making system responsible for coordinating how intelligence is applied across a decentralized network of independently operated hosts.
 
 <div class="post-image">
   <img src="/assets/images/llooma-v1.0-vision.png"
