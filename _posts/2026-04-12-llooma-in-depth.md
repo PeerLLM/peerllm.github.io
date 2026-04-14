@@ -123,6 +123,11 @@ This approach enables a more flexible, scalable, and resilient system, where int
 
 In this architecture, intelligence is no longer a static artifact. It becomes a dynamic process, shaped by the interaction between decision-making logic and distributed compute resources.
 
+<br/>
+
+👉 **Download the full whitepaper:**  
+[LLooMA Whitepaper v1.0.0 (PDF)]({{ "/assets/files/llooma-whitepaper-v1.0.0.pdf" | relative_url }})
+
 ---
 
 **Hassan**
