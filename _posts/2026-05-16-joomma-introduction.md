@@ -114,4 +114,12 @@ This is how we move from AI systems that extract from people to AI systems that 
 
 JooMMA is a step toward that future. It is a provenance-preserving knowledge layer for PeerLLM, designed to keep human expertise visible, trusted, and rewarded.
 
+If you'd like to hear more about the state of AI and data and the thinking behind this whitepaper and the PeerLLM approach, watch this:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
+  <iframe src="https://www.youtube.com/embed/MEAChCxIKHo" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    frameborder="0" allowfullscreen></iframe>
+</div>
+
 Read the full whitepaper for JooMMA <a href="/assets/files/joomma-whitepaper-v1.0.0.pdf" target="_blank">here</a>
