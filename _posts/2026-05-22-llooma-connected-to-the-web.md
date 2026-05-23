@@ -12,6 +12,11 @@ As of this release, LLooMA can reach beyond that horizon.
 
 When your question needs a fact from the real world, LLooMA goes and finds it.
 
+<div class="post-image">
+  <img src="/assets/images/v1.5.0-llooma-connected-web.png"
+       alt="The LLooMA logo reaching out and connecting to a wireframe globe representing the World Wide Web">
+</div>
+
 ---
 
 ## 0/ A Quick Recap of LLooMA
