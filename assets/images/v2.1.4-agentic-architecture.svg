@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1150" width="2000" height="1150" font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+  <defs>
+    <!-- hand-drawn wobble for all strokes -->
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#ececec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <symbol id="cloud" viewBox="0 0 240 140">
+      <path d="M40,108 C16,108 10,84 32,76 C24,50 60,42 76,60 C86,36 134,36 146,62 C158,42 196,50 192,80 C214,84 212,112 188,112 C188,112 60,112 40,108 Z"
+            fill="none" stroke="#ececec" stroke-width="2.1" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="2000" height="1150" fill="#0c0f16"/>
+
+  <!-- ===== strokes (hand-drawn) ===== -->
+  <g filter="url(#rough)" fill="none" stroke="#ececec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- nodes -->
+    <use href="#cloud" x="95" y="500" width="320" height="190"/>            <!-- YOU -->
+    <rect x="560" y="500" width="300" height="175" rx="22"/>                <!-- ORCHESTRATOR -->
+    <use href="#cloud" x="1280" y="200" width="420" height="310"/>          <!-- COMMUNITY HOSTS -->
+    <rect x="1285" y="730" width="345" height="190" rx="22"/>              <!-- PeerLLM CORE -->
+
+    <!-- TOOLS cylinder -->
+    <ellipse cx="710" cy="848" rx="72" ry="20"/>
+    <path d="M638,848 L638,958"/>
+    <path d="M782,848 L782,958"/>
+    <path d="M638,958 A72,20 0 0 0 782,958"/>
+
+    <!-- edges -->
+    <path d="M415,588 L548,588" marker-end="url(#arrow)"/>                  <!-- YOU -> ORCH -->
+    <path d="M862,548 L1300,408" marker-end="url(#arrow)"/>                <!-- ORCH -> COMMUNITY -->
+    <path d="M866,628 L1278,792" marker-end="url(#arrow)"/>                <!-- ORCH -> CORE -->
+    <path d="M710,679 L710,824" marker-start="url(#arrow)" marker-end="url(#arrow)"/> <!-- ORCH <-> TOOLS -->
+    <path d="M1470,728 C1520,650 1558,560 1575,480" marker-end="url(#arrow)" stroke-dasharray="2 12"/> <!-- CORE escalates -> COMMUNITY -->
+  </g>
+
+  <!-- ===== text (crisp) ===== -->
+  <g fill="#f1f1f1" text-anchor="middle">
+    <text x="1000" y="120" font-size="48" letter-spacing="6" fill="#fafafa">CONCEPTUAL  AGENTIC  ARCHITECTURE</text>
+
+    <text x="255" y="598" font-size="30">YOU</text>
+    <text x="255" y="632" font-size="20" fill="#9fb4d4">agent client</text>
+
+    <text x="710" y="576" font-size="29">ORCHESTRATOR</text>
+    <text x="710" y="610" font-size="19" fill="#9fb4d4">/v1 · agentic loop</text>
+
+    <text x="1490" y="377" font-size="27">COMMUNITY</text>
+    <text x="1490" y="411" font-size="27">HOSTS</text>
+
+    <text x="1457" y="818" font-size="29">PeerLLM CORE</text>
+    <text x="1457" y="852" font-size="19" fill="#9fb4d4">fallback decider</text>
+
+    <text x="710" y="892" font-size="22">TOOLS</text>
+    <text x="710" y="922" font-size="18" fill="#9fb4d4">web_search</text>
+
+    <!-- edge labels -->
+    <text x="482" y="570" font-size="18" fill="#aeb7c5">prompt + tools</text>
+    <text x="1075" y="452" font-size="18" fill="#aeb7c5">decentralized first</text>
+    <text x="1040" y="742" font-size="18" fill="#aeb7c5">on any miss</text>
+    <text x="788" y="758" font-size="18" fill="#aeb7c5" text-anchor="start">tool loop</text>
+  </g>
+
+  <!-- footer principles -->
+  <text x="1000" y="1085" font-size="23" text-anchor="middle" fill="#7f8a9c"
+        font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+    decentralization first  ·  privacy by fragmentation  ·  deterministic fallback
+  </text>
+</svg>

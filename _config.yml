@@ -3,7 +3,11 @@ email: your-email@example.com
 description: >-
   A blog about PeerLLM and related topics in machine learning and AI.
 baseurl: ""
-url: "https://peerllm.github.io"
+url: "https://blog.peerllm.com"
+
+# Social / SEO previews (used by jekyll-seo-tag)
+twitter:
+  card: summary_large_image
 
 # Build settings
 markdown: kramdown
