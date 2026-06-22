@@ -465,4 +465,21 @@ img, video {
 .post-image.narrow img {
   max-width: 340px;
 }
+/* Responsive 16:9 video embed (YouTube, etc.). */
+.post-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 4rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+.post-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
