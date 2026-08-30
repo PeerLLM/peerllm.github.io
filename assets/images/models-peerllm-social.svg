@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1260" width="2400" height="1260" font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+  <defs>
+    <!-- hand-drawn wobble for all strokes -->
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#ececec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="2400" height="1260" fill="#0c0f16"/>
+
+  <!-- ===== strokes (hand-drawn) ===== -->
+  <g filter="url(#rough)" fill="none" stroke="#ececec" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- the one model -->
+    <rect x="150" y="520" width="440" height="230" rx="22"/>
+
+    <!-- fan out to four machines -->
+    <path d="M600,600 C720,600 740,360 860,360" marker-end="url(#arrow)"/>
+    <path d="M600,625 C720,625 740,545 860,545" marker-end="url(#arrow)"/>
+    <path d="M600,650 C720,650 740,730 860,730" marker-end="url(#arrow)"/>
+    <path d="M600,675 C720,675 740,915 860,915" marker-end="url(#arrow)"/>
+
+    <!-- machine boxes -->
+    <rect x="880" y="288" width="330" height="146" rx="18"/>
+    <rect x="880" y="473" width="330" height="146" rx="18"/>
+    <rect x="880" y="658" width="330" height="146" rx="18"/>
+    <rect x="880" y="843" width="330" height="146" rx="18"/>
+
+    <!-- speed bars, drawn to scale against 68.5 -->
+    <rect x="1270" y="336" width="820" height="46" rx="10"/>
+    <rect x="1270" y="521" width="681" height="46" rx="10"/>
+    <rect x="1270" y="706" width="324" height="46" rx="10"/>
+    <rect x="1270" y="891" width="103" height="46" rx="10"/>
+
+    <!-- the underline under the punchline -->
+    <path d="M150,1105 C700,1092 1500,1118 2130,1100"/>
+  </g>
+
+  <!-- filled speed bars -->
+  <g filter="url(#rough)" stroke="none">
+    <rect x="1270" y="336" width="820" height="46" rx="10" fill="#7c8cf8" opacity="0.85"/>
+    <rect x="1270" y="521" width="681" height="46" rx="10" fill="#7c8cf8" opacity="0.6"/>
+    <rect x="1270" y="706" width="324" height="46" rx="10" fill="#7c8cf8" opacity="0.42"/>
+    <rect x="1270" y="891" width="103" height="46" rx="10" fill="#7c8cf8" opacity="0.3"/>
+  </g>
+
+  <!-- ===== type ===== -->
+  <g fill="#ececec">
+    <text x="150" y="180" font-size="96" letter-spacing="1">models.peerllm.com</text>
+    <text x="150" y="268" font-size="46" opacity="0.72">A live profile for every LLM on the network</text>
+
+    <!-- the model -->
+    <text x="196" y="608" font-size="52">Qwen2.5 7B</text>
+    <text x="196" y="668" font-size="34" opacity="0.72">one set of weights</text>
+    <text x="196" y="716" font-size="30" opacity="0.55">Apache-2.0 . Q5_K_M</text>
+
+    <!-- machines -->
+    <text x="916" y="352" font-size="34" opacity="0.72">windows . x64</text>
+    <text x="916" y="404" font-size="42">BIGG B</text>
+    <text x="916" y="537" font-size="34" opacity="0.72">linux . x64</text>
+    <text x="916" y="589" font-size="33">HMZ-CVL1-COS</text>
+    <text x="916" y="722" font-size="34" opacity="0.72">mac . ARM64</text>
+    <text x="916" y="774" font-size="29">lcti-mmi-m4p-24-1</text>
+    <text x="916" y="907" font-size="34" opacity="0.72">mac . x64</text>
+    <text x="916" y="959" font-size="42">Macko Wacko</text>
+
+    <!-- measured speeds -->
+    <text x="2120" y="376" font-size="46">68.5 tok/s</text>
+    <text x="1981" y="561" font-size="46" opacity="0.85">56.9 tok/s</text>
+    <text x="1624" y="746" font-size="46" opacity="0.75">27.1 tok/s</text>
+    <text x="1403" y="931" font-size="46" opacity="0.65">8.6 tok/s</text>
+
+    <!-- punchline -->
+    <text x="150" y="1075" font-size="62">Same weights. 8x the speed. Measured, not modelled.</text>
+    <text x="150" y="1175" font-size="38" opacity="0.6">Hardware . Performance . SKILLs . Correctness . Adaptation . Licence</text>
+  </g>
+</svg>
