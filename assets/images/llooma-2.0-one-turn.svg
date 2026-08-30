@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1150" width="2000" height="1150" font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+  <defs>
+    <!-- hand-drawn wobble for all strokes -->
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#ececec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <symbol id="cloud" viewBox="0 0 240 140">
+      <path d="M40,108 C16,108 10,84 32,76 C24,50 60,42 76,60 C86,36 134,36 146,62 C158,42 196,50 192,80 C214,84 212,112 188,112 C188,112 60,112 40,108 Z"
+            fill="none" stroke="#ececec" stroke-width="2.1" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="2000" height="1150" fill="#0c0f16"/>
+
+  <!-- ===== strokes (hand-drawn) ===== -->
+  <g filter="url(#rough)" fill="none" stroke="#ececec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- YOU -->
+    <use href="#cloud" x="70" y="490" width="320" height="190"/>
+
+    <!-- RESOLVE ONCE -->
+    <rect x="500" y="500" width="330" height="170" rx="22"/>
+
+    <!-- THE LOOP -->
+    <rect x="960" y="480" width="330" height="210" rx="22"/>
+
+    <!-- TOOLS cylinder (server-side) -->
+    <ellipse cx="1560" cy="230" rx="72" ry="20"/>
+    <path d="M1488,230 L1488,340"/>
+    <path d="M1632,230 L1632,340"/>
+    <path d="M1488,340 A72,20 0 0 0 1632,340"/>
+
+    <!-- ANSWER -->
+    <rect x="1560" y="530" width="310" height="130" rx="22"/>
+
+    <!-- edges -->
+    <path d="M390,585 L488,585" marker-end="url(#arrow)"/>                       <!-- YOU -> RESOLVE -->
+    <path d="M830,585 L948,585" marker-end="url(#arrow)"/>                       <!-- RESOLVE -> LOOP -->
+    <path d="M1220,480 C1300,400 1400,330 1478,300" marker-end="url(#arrow)" marker-start="url(#arrow)"/> <!-- LOOP <-> TOOLS -->
+    <path d="M1290,595 L1548,595" marker-end="url(#arrow)"/>                     <!-- LOOP -> ANSWER -->
+    <path d="M1120,690 C1000,880 500,900 280,700" marker-end="url(#arrow)" stroke-dasharray="2 12"/> <!-- LOOP yields back to YOU -->
+  </g>
+
+  <!-- ===== text (crisp) ===== -->
+  <g fill="#f1f1f1" text-anchor="middle">
+    <text x="1000" y="120" font-size="48" letter-spacing="6" fill="#fafafa">ONE  TURN  THROUGH  THE  LOOP</text>
+
+    <text x="230" y="588" font-size="30">YOU</text>
+    <text x="230" y="622" font-size="20" fill="#9fb4d4">prompt + tools + schema</text>
+
+    <text x="665" y="576" font-size="27">RESOLVE ONCE</text>
+    <text x="665" y="610" font-size="18" fill="#9fb4d4">configured → request → default</text>
+
+    <text x="1125" y="576" font-size="29">THE LOOP</text>
+    <text x="1125" y="610" font-size="19" fill="#9fb4d4">decide · authorize · act</text>
+
+    <text x="1560" y="278" font-size="22">MY TOOLS</text>
+    <text x="1560" y="306" font-size="18" fill="#9fb4d4">web_search</text>
+
+    <text x="1715" y="586" font-size="27">ANSWER</text>
+    <text x="1715" y="620" font-size="18" fill="#9fb4d4">in your schema</text>
+
+    <!-- edge labels -->
+    <text x="1400" y="425" font-size="18" fill="#aeb7c5">run · observe · loop again</text>
+    <text x="1420" y="572" font-size="18" fill="#aeb7c5">done</text>
+    <text x="760" y="862" font-size="18" fill="#aeb7c5">your tool? the run pauses — you execute, post the result, it resumes</text>
+  </g>
+
+  <!-- footer principles -->
+  <text x="1000" y="1085" font-size="23" text-anchor="middle" fill="#7f8a9c"
+        font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+    resolve once  ·  loop on the server  ·  yield to the caller
+  </text>
+</svg>

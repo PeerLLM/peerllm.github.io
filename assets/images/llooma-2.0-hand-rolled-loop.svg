@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1150" width="2000" height="1150" font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+  <defs>
+    <!-- hand-drawn wobble for all strokes -->
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#ececec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <symbol id="cloud" viewBox="0 0 240 140">
+      <path d="M40,108 C16,108 10,84 32,76 C24,50 60,42 76,60 C86,36 134,36 146,62 C158,42 196,50 192,80 C214,84 212,112 188,112 C188,112 60,112 40,108 Z"
+            fill="none" stroke="#ececec" stroke-width="2.1" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="2000" height="1150" fill="#0c0f16"/>
+
+  <!-- ===== strokes (hand-drawn) ===== -->
+  <g filter="url(#rough)" fill="none" stroke="#ececec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- YOU -->
+    <use href="#cloud" x="70" y="490" width="320" height="190"/>
+
+    <!-- the one big loop -->
+    <rect x="500" y="220" width="1400" height="760" rx="22"/>
+
+    <!-- the concerns, all inside, all wired to each other -->
+    <rect x="590" y="360" width="280" height="110" rx="16"/>   <!-- DECIDE -->
+    <rect x="1470" y="360" width="280" height="110" rx="16"/>  <!-- VALIDATE -->
+    <rect x="590" y="590" width="280" height="110" rx="16"/>   <!-- RETRY -->
+    <rect x="1470" y="590" width="280" height="110" rx="16"/>  <!-- REVIEW -->
+    <rect x="590" y="820" width="280" height="110" rx="16"/>   <!-- TRANSCRIPT -->
+    <rect x="1470" y="820" width="280" height="110" rx="16"/>  <!-- FALLBACK -->
+    <rect x="1090" y="590" width="240" height="110" rx="16"/>  <!-- TOOLS -->
+
+    <!-- the tangle -->
+    <path d="M870,415 L1458,415" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M730,470 L730,578" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M1610,470 L1610,578" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M730,700 L730,808" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M1610,700 L1610,808" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M870,455 L1462,600" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M1470,455 L878,600" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M870,875 L1458,875" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M870,655 L1078,655" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M1342,655 L1458,655" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M878,830 L1462,700" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M870,700 L1462,830" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+    <path d="M1160,590 C1050,500 950,480 880,462" marker-end="url(#arrow)"/>
+
+    <!-- you -> the loop -->
+    <path d="M390,585 L488,585" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ===== text (crisp) ===== -->
+  <g fill="#f1f1f1" text-anchor="middle">
+    <text x="1000" y="120" font-size="48" letter-spacing="6" fill="#fafafa">THE  LOOP  WE  WROTE  BY  HAND</text>
+
+    <text x="230" y="588" font-size="30">YOU</text>
+    <text x="230" y="622" font-size="20" fill="#9fb4d4">agent client</text>
+
+    <text x="1000" y="300" font-size="29">ORCHESTRATOR</text>
+    <text x="1000" y="334" font-size="19" fill="#9fb4d4">one loop · every concern load-bearing on every other</text>
+
+    <text x="730" y="425" font-size="24">DECIDE</text>
+    <text x="1610" y="425" font-size="24">VALIDATE</text>
+    <text x="730" y="655" font-size="24">RETRY</text>
+    <text x="1610" y="655" font-size="24">REVIEW</text>
+    <text x="730" y="885" font-size="24">TRANSCRIPT</text>
+    <text x="1610" y="885" font-size="24">FALLBACK</text>
+    <text x="1210" y="655" font-size="24">TOOLS</text>
+
+    <!-- edge label -->
+    <text x="440" y="560" font-size="18" fill="#aeb7c5">prompt</text>
+  </g>
+
+  <!-- footer principles -->
+  <text x="1000" y="1085" font-size="23" text-anchor="middle" fill="#7f8a9c"
+        font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
+    it worked  ·  but hardening one path meant re-testing all of them
+  </text>
+</svg>
