@@ -68,7 +68,7 @@
     <!-- edge labels -->
     <text x="1400" y="425" font-size="18" fill="#aeb7c5">run · observe · loop again</text>
     <text x="1420" y="572" font-size="18" fill="#aeb7c5">done</text>
-    <text x="760" y="862" font-size="18" fill="#aeb7c5">your tool? the run pauses — you execute, post the result, it resumes</text>
+    <text x="760" y="862" font-size="18" fill="#aeb7c5">your tool? the run pauses: you execute, post the result, it resumes</text>
   </g>
 
   <!-- footer principles -->
