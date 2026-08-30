@@ -35,7 +35,7 @@
     <rect x="1470" y="820" width="280" height="110" rx="16"/>  <!-- FALLBACK -->
     <rect x="1090" y="590" width="240" height="110" rx="16"/>  <!-- TOOLS -->
 
-    <!-- the tangle -->
+    <!-- every concern wired to every other -->
     <path d="M870,415 L1458,415" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
     <path d="M730,470 L730,578" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
     <path d="M1610,470 L1610,578" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
@@ -56,7 +56,7 @@
 
   <!-- ===== text (crisp) ===== -->
   <g fill="#f1f1f1" text-anchor="middle">
-    <text x="1000" y="120" font-size="48" letter-spacing="6" fill="#fafafa">THE  LOOP  WE  WROTE  BY  HAND</text>
+    <text x="1000" y="120" font-size="48" letter-spacing="6" fill="#fafafa">THE  LOOP  THAT  GOT  US  HERE</text>
 
     <text x="230" y="588" font-size="30">YOU</text>
     <text x="230" y="622" font-size="20" fill="#9fb4d4">agent client</text>
@@ -79,6 +79,6 @@
   <!-- footer principles -->
   <text x="1000" y="1085" font-size="23" text-anchor="middle" fill="#7f8a9c"
         font-family="'Segoe Print','Bradley Hand','Comic Sans MS',cursive">
-    it worked  ·  but hardening one path meant re-testing all of them
+    proven in production  ·  but hardening one path meant re-testing all of them
   </text>
 </svg>
