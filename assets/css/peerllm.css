@@ -483,3 +483,68 @@ img, video {
   border: 0;
 }
 
+
+/* ────────────────────────────────
+   Tables
+
+   Markdown tables were entirely unstyled until now, so they rendered as bare
+   browser defaults: cramped columns, no separators, invisible header. This has
+   been the case since the first post that used one, in November 2025. Styled
+   here to match the cards and panels above, using the same tokens.
+   ──────────────────────────────── */
+.post-content table {
+  width: 100%;
+  margin: 2.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: hsl(var(--card) / .35);
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.post-content thead {
+  background: hsl(var(--card) / .8);
+}
+
+.post-content th {
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: hsl(var(--fg));
+  padding: .8rem 1.1rem;
+  border-bottom: 1px solid hsl(var(--border));
+  white-space: nowrap;
+}
+
+.post-content td {
+  padding: .75rem 1.1rem;
+  border-bottom: 1px solid hsl(var(--border) / .6);
+  color: hsl(var(--muted-fg));
+  vertical-align: top;
+}
+
+.post-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.post-content tbody tr:hover td {
+  background: hsl(var(--card) / .45);
+  color: hsl(var(--fg));
+}
+
+/* The first column is the row's subject, so it carries the emphasis. */
+.post-content tbody td:first-child {
+  color: hsl(var(--fg));
+  font-weight: 500;
+}
+
+/* A narrow screen cannot honour fixed columns; let the table scroll on its own
+   rather than forcing the whole page sideways. */
+@media (max-width: 640px) {
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
