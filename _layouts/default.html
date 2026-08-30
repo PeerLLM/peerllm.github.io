@@ -27,5 +27,15 @@
     <footer>
       <p>© 2025 Hassan Habib — Decentralized Intelligence for Everyone</p>
     </footer>
+
+    <script>
+      // External links open in a new tab; the blog stays where it is.
+      for (const link of document.querySelectorAll('a[href]')) {
+        if (link.origin !== window.location.origin) {
+          link.target = '_blank';
+          link.rel = 'noopener';
+        }
+      }
+    </script>
   </body>
 </html>
