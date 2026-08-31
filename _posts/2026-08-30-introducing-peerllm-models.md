@@ -43,6 +43,11 @@ That sounds obvious. It is not how most of this genre works. It is very easy to 
 
 So: a model nobody has ever timed shows no speed, and says "no machine has ever timed this model". A model with no traffic this window shows no success rate, and says so. A licence we have not curated says "not yet curated" rather than guessing Apache-2.0 over an unknown set of weights. Being blank is a real answer, and often a more useful one than a confident wrong number.
 
+<div class="post-image shot wide">
+  <img src="/assets/images/models-index.png"
+       alt="The models.peerllm.com index: 12 of 19 machines online, 12 distinct models held, and a table of every model with its available machines, median throughput, skill score and traffic">
+</div>
+
 ## 2/ Hardware: Which Machines, Actually
 
 The first panel on any profile is the fleet, filtered to this model.
@@ -52,6 +57,11 @@ Not "recommended: 16GB VRAM". The actual machines: how many hold the weights, ho
 That last distinction matters more than it looks. A host's headline speed describes whatever it happens to be running. What you want is this model, on that machine, which is what the orchestrator records and what we show.
 
 Machine identities never leave our server. What you see is the same short, non-identifying handle the [network observatory](https://networks.peerllm.com) shows, with connection ids and billing detail stripped before the data ever reaches your browser.
+
+<div class="post-image shot wide">
+  <img src="/assets/images/models-hardware.png"
+       alt="The Hardware panel for Qwen2.5 7B Instruct: 15 machines holding the weights, 12 online, none warm, a 16 GB memory floor, platform and accelerator breakdowns, then each machine listed with its RAM, VRAM and its own measured throughput for this model">
+</div>
 
 ## 3/ Performance: The Number That Averages Destroy
 
@@ -70,6 +80,11 @@ Take Qwen2.5 7B Instruct. One set of weights, one quantisation, fourteen machine
 
 So the site refuses to print one alone. Every throughput figure comes with its spread, its median marked, and the fastest and slowest machines named. On a decentralized network, the question is never "how fast is this model". It is "how fast is this model *where my request lands*", and routing choice matters more than the headline suggests.
 
+<div class="post-image shot wide">
+  <img src="/assets/images/models-performance.png"
+       alt="The Performance panel: 14 machines plotted as dots along an axis running from zero to 68.5 tok/s with the 40.3 median marked, above a line reading: fastest is BIGG B at 68.5 tok/s, slowest is Macko Wacko at 8.6 tok/s, a 8.0x gap on identical weights">
+</div>
+
 ## 4/ SKILLs: Does It Follow Instructions?
 
 This is where the two portals meet.
@@ -77,6 +92,11 @@ This is where the two portals meet.
 A skill can work perfectly on one model and quietly fall apart on another. SKILLs already measures that, model by model, on real eval runs. So every model profile pulls its skill evidence directly from [skills.peerllm.com](https://skills.peerllm.com): how many skills it has been graded on, its mean adherence, and its standing in each category of work against every other model tested there.
 
 The category breakdown is the interesting part, because it is rarely flat. Qwen3 14B scores 100 on writing and 100 on tool use, 92.3 on reasoning, and 26.6 on research. That is not a model that is "good" or "bad". That is a model with a shape, and knowing the shape tells you which jobs to send it.
+
+<div class="post-image shot wide">
+  <img src="/assets/images/models-skills.png"
+       alt="The Response to SKILLs panel for Qwen3 14B: 81 adherence over 23 runs across 12 graded skills, strongest at writing and tool use, weakest at research and data, with per-category bars reading 100, 100, 92.3, 51.9 and 26.6">
+</div>
 
 ## 5/ Correctness: Three Readings, Never Fused
 
@@ -88,6 +108,11 @@ There are three independent ways to ask whether a model gets things right, and t
 
 Every instinct says to average these into one score. We deliberately do not. A composite would hide *which* of the three is missing, and that is precisely the thing worth knowing: a model with a great success rate that has never been run against a skill is a very different proposition from one that has been graded and passed. They sit side by side, unfused, and any of them can be blank.
 
+<div class="post-image shot wide">
+  <img src="/assets/images/models-correctness.png"
+       alt="The Correctness panel showing three separate rings rather than one score: delivery 95, instruction 81 over 23 skill runs, and reachability 100">
+</div>
+
 ## 6/ Licence: The Part Nobody Publishes
 
 None of our upstreams carry licence data. Not the orchestrator, not the model catalogue. You get the weights repo and nothing about what you may do with the weights.
@@ -97,6 +122,11 @@ So this is curated by hand, in the repository, against each model's own weights 
 Three rules keep it honest. Every entry links both the licence text and the weights repo the reading came from. Each one records *how* it matched, whether by exact model id, by weights repo, or merely by family, and the page marks a family match as the weaker claim it is. And a model we do not recognise returns nothing at all. "Not yet curated" is a real answer; inventing a permissive licence over unknown weights is a liability.
 
 It is a reading of a licence, not legal advice, and the page says so.
+
+<div class="post-image shot wide">
+  <img src="/assets/images/models-licence.png"
+       alt="The Licence panel: Apache License 2.0, matched by model, with commercial use, modification and redistribution each marked permitted, attribution listed as an obligation, and links to the licence text and the weights repo">
+</div>
 
 ## 7/ Can My Machine Run This?
 
@@ -111,6 +141,11 @@ The question most people actually arrive with. There is a button for it on every
 Your browser will tell us a surprising amount: your GPU's name, your core count, your platform. It will not tell us your VRAM, ever, because no browser API exposes it; it is withheld as a fingerprinting signal. But a card's memory configuration is public knowledge, so we look it up from the name. Everything detected is editable, everything says where its number came from, and none of it leaves your browser.
 
 You can also point the check at a machine that is not yours: a configuration you are considering, or any machine already on the network. Pick one of those and the speed answer stops being an inference from lookalikes and becomes a direct reading, which the page marks as *measured, not inferred*.
+
+<div class="post-image shot wide">
+  <img src="/assets/images/models-fit.png"
+       alt="The fit check answering for a desktop with an RTX 4090: runs on the GPU needing about 12.9 GB of 24, a memory bar split into weights, overhead and headroom, a measured median of 16 tok/s from three comparable machines, and an earnings estimate of $0.21 to $0.34 a month broken into a compliance floor and a demand share, with the estimate-only legal notice beneath it">
+</div>
 
 ## 8/ Why This Only Works on a Real Network
 

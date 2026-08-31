@@ -461,6 +461,22 @@ img, video {
   margin: 0 auto;
   border-radius: var(--radius);
 }
+/* Dense UI screenshots do not survive the 780px reading column: the panel text
+   ends up around two thirds size. Let them break out of it on viewports wide
+   enough to spare the room. Below that they simply fill the column as usual. */
+@media (min-width: 1200px) {
+  .post-image.wide {
+    width: min(1080px, calc(100vw - 5rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* UI screenshots are dark on a dark page, so give them an edge to sit on.
+   Photographs do not need this, hence the separate class. */
+.post-image.shot img {
+  border: 1px solid hsl(var(--border));
+  box-shadow: var(--shadow-1);
+}
 /* Narrow variant for tall/portrait screenshots (e.g. a single host card). */
 .post-image.narrow img {
   max-width: 340px;
