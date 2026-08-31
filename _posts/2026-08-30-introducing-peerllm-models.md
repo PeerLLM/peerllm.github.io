@@ -106,7 +106,7 @@ The question most people actually arrive with. There is a button for it on every
 
 **How fast** is the part I am proudest of, because it is *not* a formula. The network has already timed this model on real machines. So we find the ones most like yours and report what they actually get. If nothing on the fleet resembles your machine, the site says so and gives you no number, rather than modelling one.
 
-**What it earns** takes the published host reward against the model's real recent traffic, split across the machines serving it. Clearly labelled a projection, because it is one.
+**What it earns** has two halves that behave nothing alike. The network probes every machine it trusts on a cadence, so a host is paid for being *able* to serve a model whether or not a user ever asks for it. That is the floor, and it is the half a prospective host actually controls, because it scales with how many models the machine can hold rather than with anyone's demand. On top of it sits a share of the real traffic that model saw, divided across the hosts serving it plus yours. Both halves are counted from incoming plus outgoing tokens at the published payout rate, which is the same arithmetic that settles a payout rather than a model of one. The site shows the range and never the midpoint alone, because the gap between a quiet machine and a busy one is the most useful thing a prospective host can be told. It is still an estimate, and it is labelled one.
 
 Your browser will tell us a surprising amount: your GPU's name, your core count, your platform. It will not tell us your VRAM, ever, because no browser API exposes it; it is withheld as a fingerprinting signal. But a card's memory configuration is public knowledge, so we look it up from the name. Everything detected is editable, everything says where its number came from, and none of it leaves your browser.
 
@@ -126,7 +126,7 @@ If you have a machine sitting idle, open any model and press **Can my machine ru
 
 ---
 
-<sub>PeerLLM is experimental software provided as is. Figures quoted in this post were measured on the live network on 30 August 2026 and will have changed by the time you read it; the site shows current values. Model and product names referenced here belong to their respective owners and are mentioned only to identify which models the network serves; their mention does not imply affiliation or endorsement. Licence summaries on the site are readings of published licence terms, not legal advice.</sub>
+<sub>PeerLLM is experimental software provided as is. Figures quoted in this post were measured on the live network on 30 August 2026, re-checked on 31 August, and will have changed by the time you read it; the site shows current values. Model and product names referenced here belong to their respective owners and are mentioned only to identify which models the network serves; their mention does not imply affiliation or endorsement. Licence summaries on the site are readings of published licence terms, not legal advice.</sub>
 
 ---
 
