@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="708" height="1342" viewBox="0 0 708 1342" font-family="ui-monospace, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace" font-size="14" xml:space="preserve">
+  <rect width="708" height="1342" rx="10" fill="#11151c" stroke="#232a36"/>
+  <path d="M0 10a10 10 0 0 1 10-10h688a10 10 0 0 1 10 10v20H0z" fill="#171c25"/>
+  <line x1="0" y1="30" x2="708" y2="30" stroke="#232a36"/>
+  <circle cx="18" cy="15" r="5" fill="#ff5f57"/><circle cx="36" cy="15" r="5" fill="#febc2e"/><circle cx="54" cy="15" r="5" fill="#28c840"/>
+  <text x="74" y="19" fill="#7d8797" font-size="11">peerllm-host check — 80 columns</text>
+  <text x="18" y="46" fill="#28c840">$</text><text x="34.8" y="46" fill="#e6edf7">peerllm-host check</text>
+  <text x="18" y="86" fill="#7ec8ff">Your machine: 192 GB RAM · GeForce RTX 5090 (32 GB) · GPU · windows/x64</text>
+  <text x="18" y="126" fill="#e6edf7" font-weight="600">CAN RUN on this machine (11)</text>
+  <text x="18" y="146" fill="#c3cad6">  [x] counts toward the estimate. Change it with --models.</text>
+  <text x="18" y="166" fill="#98a2b3">  Speeds are what comparable machines on the network measured.</text>
+  <text x="18" y="206" fill="#c3cad6">  [x] Qwen2.5 7B Instruct            6 GB  42.4 tok/s    $0.38</text>
+  <text x="18" y="226" fill="#c3cad6">  [x] Qwen2.5 Coder 7B Instruct      6 GB  38.3 tok/s    $0.31</text>
+  <text x="18" y="246" fill="#c3cad6">  [x] Mistral 7B Instruct v0.1       6 GB    36 tok/s    $0.28</text>
+  <text x="18" y="266" fill="#c3cad6">  [x] Qwen2.5 Math 7B Instruct       6 GB  33.7 tok/s    $0.26</text>
+  <text x="18" y="286" fill="#c3cad6">  [x] Mistral 7B Instruct v0.3     9.2 GB  31.2 tok/s    $0.32</text>
+  <text x="18" y="306" fill="#c3cad6">  [x] Mistral 7B Instruct v0.2     8.1 GB  28.1 tok/s    $0.28</text>
+  <text x="18" y="326" fill="#c3cad6">  [x] Qwen3 8B                     6.9 GB  23.7 tok/s    $0.31</text>
+  <text x="18" y="346" fill="#c3cad6">  [x] BioMistral 7B                  6 GB  23.3 tok/s    $0.14</text>
+  <text x="18" y="366" fill="#c3cad6">  [x] Qwen3 14B                   12.9 GB    16 tok/s    $0.34</text>
+  <text x="18" y="386" fill="#c3cad6">  [x] GPT OSS 20B                 17.3 GB           —    $0.10</text>
+  <text x="18" y="406" fill="#c3cad6">  [x] Qwen3.8 27B UD              18.4 GB           —    $0.04</text>
+  <text x="18" y="446" fill="#e6edf7" font-weight="600">UNVERIFIED (1)</text>
+  <text x="18" y="466" fill="#98a2b3">  The network has no size for these, so nothing can be weighed against</text>
+  <text x="18" y="486" fill="#98a2b3">  this machine. Not a no — an unknown.</text>
+  <text x="18" y="526" fill="#98a2b3">      Phi 4 Mini Reasoning              —           —         </text>
+  <text x="18" y="566" fill="#98a2b3">ESTIMATED for the 11 models marked above, from what hosts serving</text>
+  <text x="18" y="586" fill="#98a2b3">them actually received over the last 30 days:</text>
+  <text x="18" y="626" fill="#98a2b3">     $1.62   compliance floor   for being able to serve, asked for or not</text>
+  <text x="18" y="646" fill="#98a2b3">     $1.14   demand share       real user traffic, split one more way</text>
+  <text x="18" y="666" fill="#98a2b3">     $9.18   routed work        LLooMA traffic, scaled by model count</text>
+  <text x="18" y="686" fill="#98a2b3">  --------</text>
+  <text x="18" y="706" fill="#3ddc84" font-weight="600">    $11.94   per month</text>
+  <text x="18" y="746" fill="#f5b642">  An estimate, not a promise of payment. This is not a projection of</text>
+  <text x="18" y="766" fill="#f5b642">  profit, or of any income at all. Many hosts receive nothing, payments</text>
+  <text x="18" y="786" fill="#f5b642">  are discretionary and may be zero, and these amounts are before your</text>
+  <text x="18" y="806" fill="#f5b642">  electricity and hardware costs — which will often exceed them.</text>
+  <text x="18" y="846" fill="#4ea87a">  About 5 of these stay loaded in 30 GB of GPU memory;</text>
+  <text x="18" y="866" fill="#4ea87a">  the other 6 load when a request arrives. That costs a few seconds,</text>
+  <text x="18" y="886" fill="#4ea87a">  and a host that already has the model warm often wins the request — so more</text>
+  <text x="18" y="906" fill="#4ea87a">  memory earns more of the demand half, not more models.</text>
+  <text x="18" y="946" fill="#98a2b3">Over the same 30 days the 16 hosts on the network took home</text>
+  <text x="18" y="966" fill="#98a2b3">between $0.00 and $25.66 each: a quarter under $2.04, the middle host $10.50,</text>
+  <text x="18" y="986" fill="#98a2b3">the top quarter over $20.07. Most of that spread is uptime, not hardware.</text>
+  <text x="18" y="1026" fill="#f5b642" font-weight="600">  ESTIMATE ONLY - NOT AN OFFER, PREDICTION, OR GUARANTEE OF ANY PAYMENT.</text>
+  <text x="18" y="1046" fill="#98a2b3">  This figure is an illustrative calculation derived from the network's past</text>
+  <text x="18" y="1066" fill="#98a2b3">  activity over a limited period. Past activity does not indicate future</text>
+  <text x="18" y="1086" fill="#98a2b3">  results. PeerLLM does not promise, project, or represent that you will</text>
+  <text x="18" y="1106" fill="#98a2b3">  earn any amount, or any amount at all; many hosts receive little or</text>
+  <text x="18" y="1126" fill="#98a2b3">  nothing. Host payments are discretionary, may change or stop at any time,</text>
+  <text x="18" y="1146" fill="#98a2b3">  and may be zero. Amounts shown are GROSS and exclude your own costs -</text>
+  <text x="18" y="1166" fill="#98a2b3">  electricity, hardware, bandwidth, and wear - which will often exceed</text>
+  <text x="18" y="1186" fill="#98a2b3">  anything you receive, so operating a host may cost you money on net.</text>
+  <text x="18" y="1206" fill="#98a2b3">  Nothing here is financial, tax, investment, or business advice, and</text>
+  <text x="18" y="1226" fill="#98a2b3">  nothing here should be relied upon in deciding whether to operate a host.</text>
+  <text x="18" y="1246" fill="#98a2b3">  The PeerLLM Host Agreement governs all payments and prevails over anything</text>
+  <text x="18" y="1266" fill="#98a2b3">  shown here.</text>
+  <text x="18" y="1306" fill="#98a2b3">Nothing about this machine was stored, here or on the server.</text>
+</svg>
