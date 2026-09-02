@@ -56,7 +56,7 @@ Not "recommended: 16GB VRAM". The actual machines: how many hold the weights, ho
 
 That last distinction matters more than it looks. A host's headline speed describes whatever it happens to be running. What you want is this model, on that machine, which is what the orchestrator records and what we show.
 
-Machine identities never leave our server. What you see is the same short, non-identifying handle the [network observatory](https://networks.peerllm.com) shows, with connection ids and billing detail stripped before the data ever reaches your browser.
+What you see is the host's public display name, chosen by whoever runs the machine, alongside the same short host id the [network observatory](https://networks.peerllm.com) shows. Think of it as a gamertag: it identifies a machine on the network, not a person. Account identity, connection ids and billing detail stay on our server and never reach your browser.
 
 <div class="post-image shot wide">
   <img src="/assets/images/models-hardware.png"
