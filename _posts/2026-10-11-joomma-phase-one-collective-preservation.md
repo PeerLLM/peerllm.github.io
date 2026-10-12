@@ -38,6 +38,10 @@ Hosts that run from a terminal get the same choice in the command-line host. `pe
 
 <img src="/assets/images/joomma-cli-dashboard.png" alt="The PeerLLM command-line host dashboard in a terminal, with a JooMMA Knowledge panel showing storage on, a 10 GB quota and the storage folder.">
 
+The network shows it too. On the [PeerLLM network page](https://networks.peerllm.com), every host that offers storage now carries a storage icon beside its other badges, and its card shows how much it holds against its limit and how many pieces it keeps, right next to its GPU, memory and models.
+
+<img src="/assets/images/joomma-network-host-card.png" alt="A host card on the PeerLLM network page: the host is online, a storage icon sits among its badges, and below the GPU, RAM and VRAM bars a Storage bar reads 827 KB of 102 MB with 206 chunks held, above its tokens, prompts, uptime and models, on host version 3.2.0.">
+
 With storage off, the host says nothing about storage at all, and the dashboard looks exactly as it did before. Taking part is a choice the owner makes, and nothing about it happens by default. If you have a drive to spare, you can [download the host and join the network](https://www.peerllm.com/join-as-host.html) today.
 
 ## 1/ Locked Boxes
