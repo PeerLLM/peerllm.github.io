@@ -90,7 +90,7 @@ TooMMA is tool sharing on hosts. Someone might want to reach the web through a h
 
 ## 6/ The Future
 
-This release is for hosts who have storage to share and want a reason to share it. It is for people who want an AI network that honors the knowledge it uses and credits the people who created it. More than either of those, it is for anyone who wants a flavor of AI that puts people first: one where contributing does not require the most expensive hardware, and where the person who knew something does not vanish the moment a machine learns it.
+This release is for hosts who have storage to share and want a reason to share it. It is for people who want an AI network that honors the knowledge it uses and credits the people who created it. More than either of those, it is for anyone who wants a flavor of AI that puts people first: one where contributing does not require the most expensive hardware, and where the person who knew something does not vanish the moment a machine learns it. If that is the AI you want, [join PeerLLM today](https://www.peerllm.com/join-as-host.html).
 
 The question I keep returning to is not how much a network can compute. It is how much of what people know it can keep, and whether it can keep their names with it. The copyists who saved the books still read today did not need to own a library. They needed a quiet place, a steady hand, and the belief that what they were holding was worth passing on. A spare disk and a host that is turned on are not so different, and I hope a great many people decide that what the network is holding is worth keeping too.
 
