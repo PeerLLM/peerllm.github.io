@@ -100,6 +100,8 @@ The second plan concerns what those agents, and the models beneath them, are all
 
 Neither of these has shipped, and I am careful to say so. What has shipped is the ground they will stand on. A person displaced by AI is not helped by a faster model. They are helped by owning a piece of the machinery that replaced them, and by being paid when it runs. Host 4.2.0 is the release where that piece can be a CPU, a hard drive or a network connection, and where the network can prove the piece did its job. Keep asking hard questions about who this is for. The answers end up in releases like this one.
 
+If you want to try it, here is the plain version. Being a host costs five dollars a month. The network is early and traffic is still slow, so there is no guarantee of profit at this stage. What you get today is a seat at the start of this, a machine that works for you instead of only for itself, and a say in how the rest gets built. If that trade sounds fair, [sign up as a host today](https://www.peerllm.com/join-as-host.html).
+
 ---
 
 **Hassan**
