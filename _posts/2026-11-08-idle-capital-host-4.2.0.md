@@ -52,7 +52,7 @@ You can also see everything your host did. The host dashboard has a new TooMMA T
 
 <img src="/assets/images/host-4.2.0-cli-dashboard-tools.png" alt="The TooMMA Tools panel on the command-line host's dashboard beside JooMMA Knowledge and Estimated earnings">
 
-Payouts for tool runs are coming, but they are not live yet. Tool work will be paid the same way inference is, by tokens in and tokens out, with no separate CPU rate. The ledger that makes that possible ships in this release. The payout switch stays off until the accounting has run alongside live traffic for a while, and I will announce when it turns on. When it does, a machine that never had a graphics card will earn from the same network, by the same rules, as one that does.
+Tool runs are paid. Tool work earns the same way inference does, by tokens in and tokens out, with no separate CPU rate, and the ledger that records every verified run ships in this release. A machine that never had a graphics card earns from the same network, by the same rules, as one that does.
 
 ## 2/ The Hallmark
 
@@ -76,7 +76,7 @@ The same release fixes a quieter waste. A cancellation that arrived while a mode
 
 If you stay on an older version, nothing breaks. Hosts below 4.2.0 keep serving inference and storage exactly as before. They are not asked to run tools, they are not sent integrity challenges or audits, and their payouts are not affected by any of the new checks. The identity check applies to every version, because it only compares model output, and a host that serves the model it claims has nothing to worry about.
 
-What you miss is the new work and the mark that comes with it: no tool runs, no certified badge, and no tool-run payouts when those start. And standing still is not a place you can stay. The network will raise its minimum version over the coming releases, and hosts that remain below it will stop receiving traffic altogether. I will announce the date before it arrives, and there will be time to move. I recommend upgrading now, while the only cost of waiting is the work you are not being paid for.
+What you miss is the new work and the mark that comes with it: no tool runs, no tool-run payouts, and no certified badge. And standing still is not a place you can stay. The network will raise its minimum version over the coming releases, and hosts that remain below it will stop receiving traffic altogether. I will announce the date before it arrives, and there will be time to move. I recommend upgrading now, while the only cost of waiting is the work you are not being paid for.
 
 ## 5/ Moving Up
 
